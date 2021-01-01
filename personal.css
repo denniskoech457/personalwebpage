@@ -7,8 +7,7 @@
     background-image: url("nairobi.jpg");
     background-size: contain;
     opacity: 80%;
-    height: 10cm;
-    
+   
     
    
     
@@ -30,7 +29,7 @@
 .my-intro p {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
+    white-space: wrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
@@ -54,8 +53,9 @@
 .about{
     color: white;
     background-color: rgb(44, 43, 43);
-    height: 400px;
+    height: max-content;
     text-align: center;
+    
     
 }
 .about h1 {
@@ -68,6 +68,7 @@
     margin: 10px;
     border-radius: 5px;
     box-shadow:3px 4px 5px 6px rgb(105, 102, 102);
+    justify-content: space-between;
 }
 .my-image{
     display: flex;
