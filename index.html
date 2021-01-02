@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, , shrink-to-fit=no">
 
     <link rel="stylesheet" href="./personal.css"/>
     <script
@@ -17,6 +17,23 @@
 </head>
 <body>
  <div class="intro">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">HOME</a>
+    <a href="#">PROJECTS</a>
+    <a href="">ABOUT ME</a>
+    <div  class="intro-icons">
+      <a class="bg" href="https://www.facebook.com/profile.php?id=100009118189563"><i class="fab fa-facebook"></i></a>
+      <a class="bg" href="https://www.instagram.com/djdyex/"><i class="fab fa-instagram"></i></a>
+      <a class="bg" href="https://wa.me/message/UNF5CY5B2T3TA1"><i class="fab fa-whatsapp"></i></a>
+      <a class="bg" href="https://twitter.com/DopeKenyan1" ><i class="fab fa-twitter-square"></i></a>
+      </div>
+      
+
+    <p> Dennis Koech All right Reserved. ©2021 Nairobi, KENYA</p>
+
+  </div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
   <div class="my-intro">
     <p>Hello!</p>
     <p class="my-name">I'm Dennis Koech,</p>
@@ -69,5 +86,13 @@
 
     <p> Dennis Koech All right Reserved. ©2021 Nairobi, KENYA</p>
 </footer>
-
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
 </body>
