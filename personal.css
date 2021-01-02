@@ -1,16 +1,21 @@
-
 .intro{
     font-family: Times, Times New Roman, serif;
     font-size: 30px;
     color: white;
     background-color: rgb(22, 22, 22);
     background-image: url("nairobi.jpg");
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: auto;
     opacity: 80%;
-   
+    height: fit-content;
+    
     
    
     
+}
+body{
+    background-color: rgb(44, 43, 43);
+    height: 1240px;
 }
 .my-name{
     color: rgb(0, 183, 255);;
@@ -26,29 +31,7 @@
     text-align: center;
     padding: 8%;
 }
-.my-intro p {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: wrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-        typing 7.5s steps(40, end),
-        blink-caret .75s step-end infinite;
-      }
-      
-     /* The typing effect */
-    @keyframes typing {
-        from { width: 0 }
-        to { width: 100% }
-      }
-      
-      /* The typewriter cursor effect */
-    @keyframes blink-caret {
-        from, to { border-color: transparent }
-        50% { border-color:0; }
-      }
-    
+
 
 .about{
     color: white;
@@ -108,13 +91,13 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: white;
     display: block;
     transition: 0.3s;
   }
   
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: #26b0ff;
   }
   
   .sidenav .closebtn {
@@ -123,6 +106,7 @@
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    
   }
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
